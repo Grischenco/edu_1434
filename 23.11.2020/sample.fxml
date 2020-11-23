@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextArea fx:id="messageWindow" editable="false" prefHeight="300" prefWidth="300.0">
+         <font>
+            <Font name="Fira Code Regular" size="20.0" />
+         </font></TextArea>
+      <HBox prefHeight="50.0" prefWidth="300.0">
+         <children>
+            <TextField fx:id="textField" onAction="#send" prefHeight="25.0" prefWidth="172.0" promptText="Введите сообщение..." />
+            <Button mnemonicParsing="false" onAction="#send" prefHeight="25.0" prefWidth="98.0" text="Отправить">
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin></Button>
+         </children>
+         <padding>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
