@@ -5,11 +5,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Ваш код
-        int a, rez;
+        int a, 
+        float rez;
         Scanner reader = new Scanner(System.in);
         System.out.print("Enter a: ");
         a = reader.nextInt();
-        rez = a + a*0.15;
+        rez = a + a*0.15f;
         System.out.print("rez = "+rez);
         
     }
