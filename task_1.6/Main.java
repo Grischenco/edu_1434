@@ -11,7 +11,7 @@ public class Main {
         System.out.print("Enter a: ");
         a = reader.nextInt();
         rez = a + a*0.15f;
-        System.out.print("rez = "+rez);
+        System.out.print("rez = " + rez);
         
     }
 }
