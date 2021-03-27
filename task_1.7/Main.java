@@ -8,9 +8,19 @@
 250000 */
 
 
-
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //Ваш код
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Enter a = ");
+        int a = reader.nextInt();
+         System.out.print("Enter b = ");
+        int b = reader.nextInt();
+         System.out.print("Enter c = ");
+        int c = reader.nextInt();
+        System.out.print("rez = "+(a*b*c*1000));
+        
+        
     }
 }
