@@ -8,9 +8,14 @@ TF = (9 / 5) * TC + 32
 на вход подается значение 41.
 Пример вывода:
 105.8 */
-
+import jana.util.Scanner;
 public class Main {
     public static void main(String[] args) {
        // Ваш код
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Enter TC = ");
+        int TC = reader.nextInt();
+        int TF= (9 / 5) * TC + 32;
+        System.out.print("TF = " + TF);
     }
 }
