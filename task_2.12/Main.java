@@ -11,6 +11,15 @@
 public class Main {
     public static void main(String[] args) {
         //напишите тут ваш код
-
+Scanner in = new Scanner(System.in);
+        System.out.println("enter length ");
+        int leng = in.nextInt();
+        int [] arrays = new int [leng];
+        System.out.println("enter array ");
+        for (int i = 0; i < leng; i++) {
+             arrays [i] = in.nextInt();
+            //System.out.println(arrays[i]);
+        }for (int i = 0; i < leng; i++) {
+            System.out.print(arrays[i]+",");
     }
 }
