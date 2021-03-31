@@ -14,6 +14,13 @@
 public class Main {
     public static void main(String[] args) {
         //напишите тут ваш код
+ String [] combs= {"Мама","Мила","Раму"};
+        int i, j, k;
+        for ( i=0; i<combs.length; i++)
+            for (j = 0; j < combs.length; j++)
+                for (k = 0; k < combs.length; k++)
+                    if (combs[i] != combs[j] && combs[j] != combs[k] && combs[k] != combs[i]) {
+                        System.out.println(combs[i]+combs[j]+combs[k]);
 
     }
 }
