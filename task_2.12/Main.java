@@ -20,6 +20,7 @@ Scanner in = new Scanner(System.in);
              arrays [i] = in.nextInt();
             //System.out.println(arrays[i]);
         }for (int i = 0; i < leng; i++) {
+             Arrays.sort(arrays);
             System.out.print(arrays[i]+",");
     }
 }
