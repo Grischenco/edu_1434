@@ -5,6 +5,18 @@
 public class Main {
     public static void main(String[] args) {
         //напишите тут ваш код
-
+ Scanner in = new Scanner(System.in);
+    int a,c = 0, rez=0;
+        System.out.println("a= ");
+        a = in.nextInt();
+        System.out.print("делители числа "+ a +": ");
+        for (int i = 2; i < a; i++) {
+            if(a%i ==0){
+                c++;
+                rez = a/i;
+                System.out.print(rez+",");
+        }
+    }if (c==0) System.out.println("число простое");
+        else System.out.println("\nколличество делителей: " + c);
     }
 }
