@@ -11,6 +11,9 @@
 public class Main {
     public static int min(int a, int b, int c) {
         //напишите тут ваш код
+          if(a<b || a<c ) return a;
+            else if (c<a || c < b) return c;
+            else return b;
     }
 
     public static void main(String[] args) {
