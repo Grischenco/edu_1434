@@ -7,12 +7,20 @@
 public class Main {
     public static void main(String[] args) {
         //напишите тут ваш код
-Scanner in = new Scanner(System.in);
+  Scanner in = new Scanner(System.in);
+        int a, b;
+        String comander="";
         System.out.println("Enter number: a, b ");
-        int a = in.nextInt();
-        int b = in.nextInt();
-        if (n(a,b)>10) System.out.println(true);
-        else System.out.println(false);
+        while (!comander.equals("stop")) {
+            a = in.nextInt();
+            b = in.nextInt();
+            if (sum(a, b) > 10) System.out.println(true);
+            else System.out.println(false);
+            System.out.println("для выхoда нажмите stop");
+            in.nextLine();
+            comander=in.nextLine();
+        }
+        System.out.println("stop");
     }
     static int n(int a, int b) {
       int sum =a+b;
